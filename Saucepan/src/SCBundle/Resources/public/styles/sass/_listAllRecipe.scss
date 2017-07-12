@@ -1,0 +1,28 @@
+#indexlistAll {
+
+  background-image: url("../../img/backcuisine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: black;
+
+  a:link, a:visited, a:hover, a:active {
+    color: black;
+    text-decoration: none;
+  }
+  p, h3 {
+    margin:0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size:5em;
+    color: white;
+    font-weight: bold;
+  }
+
+}

@@ -1,0 +1,7 @@
+sc_recipe:
+    resource: "@SCBundle/Resources/config/routing/recipe.yml"
+    prefix:   /recipe
+
+sc_homepage:
+    path:     /
+    defaults: { _controller: SCBundle:Default:index }

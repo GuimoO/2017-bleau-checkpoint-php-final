@@ -1,0 +1,24 @@
+SCBundle\Entity\Recipe:
+    type: entity
+    table: null
+    repositoryClass: SCBundle\Repository\RecipeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        time:
+            type: time
+        nbpeople:
+            type: integer
+        howdo:
+            type: text
+        dateCreation:
+            type: datetime
+
+    lifecycleCallbacks: {  }

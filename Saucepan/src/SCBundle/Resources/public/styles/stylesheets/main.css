@@ -1,0 +1,133 @@
+/* 1 GOBAL*/
+/* line 1, ../sass/_global.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 3, ../sass/_global.scss */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* 2 LAYOUT */
+/* line 1, ../sass/_layout.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 4, ../sass/_layout.scss */
+.name {
+  float: left;
+}
+
+/* line 8, ../sass/_layout.scss */
+#footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+/* line 13, ../sass/_layout.scss */
+#footer .logo {
+  text-align: center;
+}
+/* line 17, ../sass/_layout.scss */
+#footer .logo i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 21, ../sass/_layout.scss */
+#footer .droit {
+  text-align: center;
+  margin-top: 10px;
+  color: silver;
+}
+/* line 27, ../sass/_layout.scss */
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+  color: silver;
+  text-decoration: none;
+}
+/* line 31, ../sass/_layout.scss */
+#footer ul {
+  padding: 0;
+}
+
+/* INDEX LISTALL RECIPE */
+/* line 1, ../sass/_listAllRecipe.scss */
+#indexlistAll {
+  background-image: url("../../img/backcuisine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+/* line 9, ../sass/_listAllRecipe.scss */
+#indexlistAll a:link, #indexlistAll a:visited, #indexlistAll a:hover, #indexlistAll a:active {
+  color: black;
+  text-decoration: none;
+}
+/* line 13, ../sass/_listAllRecipe.scss */
+#indexlistAll p, #indexlistAll h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 19, ../sass/_listAllRecipe.scss */
+#indexlistAll h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 5em;
+  color: white;
+  font-weight: bold;
+}
+
+/* SHOW ONE RECIPE */
+/* line 1, ../sass/_showOneRecipe.scss */
+#showRecipe {
+  background-image: url("../../img/backcuisine1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 5, ../sass/_showOneRecipe.scss */
+#showRecipe .contShow {
+  height: 600px;
+  width: 50%;
+  padding-top: 10;
+}
+/* line 10, ../sass/_showOneRecipe.scss */
+#showRecipe h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 5em;
+  color: black;
+  font-weight: bold;
+}
+/* line 18, ../sass/_showOneRecipe.scss */
+#showRecipe .btnmodify {
+  background-color: #B0E0E6;
+  width: 160px;
+  height: 40px;
+  padding: auto;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+/* line 26, ../sass/_showOneRecipe.scss */
+#showRecipe li, #showRecipe form {
+  display: inline;
+}
+/* line 29, ../sass/_showOneRecipe.scss */
+#showRecipe ul {
+  text-align: center;
+}
+/* line 32, ../sass/_showOneRecipe.scss */
+#showRecipe #btndelete {
+  border: none;
+  background: transparent;
+  font-weight: 700;
+}
+/* line 37, ../sass/_showOneRecipe.scss */
+#showRecipe input {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: -2.5px;
+}

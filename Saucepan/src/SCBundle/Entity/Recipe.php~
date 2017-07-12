@@ -1,0 +1,21 @@
+<?php
+
+namespace SCBundle\Entity;
+
+/**
+ * Recipe
+ */
+class Recipe
+{
+
+    public function __construct()
+    {
+
+    }
+
+
+    /* GENERATED CODE */
+
+
+}
+

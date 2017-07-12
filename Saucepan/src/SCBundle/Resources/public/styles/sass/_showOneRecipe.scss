@@ -1,0 +1,42 @@
+#showRecipe{
+  background-image: url("../../img/backcuisine1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .contShow {
+    height: 600px;
+    width: 50%;
+    padding-top: 10;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size:5em;
+    color: black;
+    font-weight: bold;
+  }
+  .btnmodify{
+    background-color: #B0E0E6;
+    width: 160px;
+    height: 40px;
+    padding:auto;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  li, form {
+    display:inline;
+  }
+  ul {
+    text-align: center;
+  }
+  #btndelete{
+    border: none;
+    background: transparent;
+    font-weight: 700;
+  }
+  input {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: -2.5px;
+  }
+}

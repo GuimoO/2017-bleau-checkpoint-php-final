@@ -1,0 +1,31 @@
+{% extends '@SC/layout.html.twig' %}
+
+{% block body %}
+    <div id="indexlistAll">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12">
+                    <h1>All Recipes</h1>
+                    {% for recipe in recipes %}
+                        <a href="{{ path('recipe_show', { 'id': recipe.id }) }}">
+                            <div class="col-xs-3 minicard">
+                                <div class="thumbnail">
+                                    <img src="{{ asset('bundles/sc/img/imgDefault.jpg') }}" alt="image par défaut">
+                                    <div class="caption">
+                                        <h3>{{ recipe.title }}</h3>
+                                        {% if recipe.time|date('H') == 0 %}
+                                            <p class="p">Duration {% if recipe.time %}{{ recipe.time|date('i') }}{% endif %} min</p>
+                                        {% else %}
+                                            <p class="p">Duration {% if recipe.time %}{{ recipe.time|date('H') }}h{{ recipe.time|date('i') }}min{% endif %}</p>
+                                        {% endif %}
+                                        <p> For {{ recipe.nbpeople }} people</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

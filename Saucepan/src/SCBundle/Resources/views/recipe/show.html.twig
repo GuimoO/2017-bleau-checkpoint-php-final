@@ -1,0 +1,53 @@
+{% extends '@SC/layout.html.twig' %}
+
+{% block body %}
+<div id="showRecipe">
+    <div class="container contShow">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>{{ recipe.title }}</h1>
+                <ul>
+                    <li><a href="{{ path('recipe_index') }}" class="btn btn-primary btnmodify" role="button">Back to the list</a></li>
+
+                    <li><a href="{{ path('recipe_edit', { 'id': recipe.id }) }}" class="btn btn-primary btnmodify" role="button">Modify my recipe</a></li>
+
+                    <li>{{ form_start(delete_form) }}
+                        <a href="#" class="btn btn-primary btnmodify" role="button"><input type="submit" value="Delete" id="btndelete"></a>
+                        {{ form_end(delete_form) }}</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <p>For {{ recipe.nbpeople }} people</p>
+            </div>
+            <div class="col-xs-6">
+                {% if recipe.time|date('H') == 0 %}
+                    <p class="p">Duration {% if recipe.time %}{{ recipe.time|date('i') }}{% endif %} min</p>
+                {% else %}
+                    <p class="p">Duration {% if recipe.time %}{{ recipe.time|date('H') }}h{{ recipe.time|date('i') }}min{% endif %}</p>
+                {% endif %}
+            </div>
+            <div class="col-xs-12">
+                <p>{{ recipe.howdo }}</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    {#<th>Title</th>#}
+    {#<td>{{ recipe.title }}</td>#}
+    {#</tr>#}
+    {#<tr>#}
+    {#<th>Time</th>#}
+    {#<td>{% if recipe.time %}{{ recipe.time|date('H:i:s') }}{% endif %}</td>#}
+    {#</tr>#}
+    {#<tr>#}
+    {#<th>Nbpeople</th>#}
+    {#<td>{{ recipe.nbpeople }}</td>#}
+    {#</tr>#}
+    {#<tr>#}
+    {#<th>Howdo</th>#}
+    {#<td>{{ recipe.howdo }}</td>#}
+
+    {% endblock %}

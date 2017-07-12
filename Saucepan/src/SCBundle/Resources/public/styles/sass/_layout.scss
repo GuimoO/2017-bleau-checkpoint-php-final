@@ -1,0 +1,32 @@
+body { padding-top: 50px;
+
+}
+.name {
+  float: left;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+
+  .logo {
+    text-align: center;
+
+  }
+  .logo i{
+    margin-left:10px;
+    margin-right: 10px;
+  }
+  .droit{
+    text-align: center;
+    margin-top: 10px;
+    color: silver;
+  }
+
+  a:link, a:visited, a:hover, a:active {
+    color:silver;
+   text-decoration:none;
+  }
+  ul{padding:0;}
+}
